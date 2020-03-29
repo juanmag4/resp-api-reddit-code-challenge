@@ -33,11 +33,11 @@ class Api::V1::PostsController < ApplicationController
     url = "https://www.reddit.com/top.json?limit=#{limit}&count=#{count}"
 
     if after != nil
-      url = "#{url}&after#{after}"
+      url = "#{url}&after=#{after}"
     end
 
     if before != nil
-      url = "#{url}&before#{before}"
+      url = "#{url}&before=#{before}"
     end
 
     url
