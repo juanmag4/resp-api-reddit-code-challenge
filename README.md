@@ -5,6 +5,6 @@ REST API REDDIT CODE CHALLENGE
 
 Running steps:
 
-1 git clone
-2 bundle install
-3 rails server (http://localhost:3000)
+1 git clone<br/>
+2 bundle install<br/>
+3 rails server (http://localhost:3000)<br/>
