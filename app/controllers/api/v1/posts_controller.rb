@@ -13,6 +13,7 @@ class Api::V1::PostsController < ApplicationController
     require "net/http"
     uri = URI.parse(url)
     request = Net::HTTP::Get.new(uri)
+    request.initialize_http_header({'User-agent': 'your bot 0.1'})
     request.content_type = 'application/json'
     response = Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') {|http| http.request request}
   end
